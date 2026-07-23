@@ -7,13 +7,14 @@
     <link rel="icon" type="image/svg+xml"
           href="data:image/svg+xml;base64,PHN2ZyB0PSIxNzMyMDY4MTE3MTU0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMwMjciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cGF0aCBkPSJNNTM1LjYgNTExLjhjOTUuMS0xMC41IDE3Mi4xLTg3LjUgMTgyLjYtMTgyLjZDNzMyIDIwNCA2MzQuNCA5OC4yIDUxMiA5OC4yYy0xMTQuNiAwLTIwNy41IDkyLjgtMjA3LjUgMjA3LjR2MC4xYzAgMTIyLjQgMTA1LjkgMjE5LjkgMjMxLjEgMjA2LjF6TTUxMiA1NzIuNGMtMTM4LjUgMC00MTUgNzkuNC00MTUgMjM3LjF2ODguOWMwIDE2LjQgMTMuMyAyOS42IDI5LjYgMjkuNmg3NzAuN2MxNi40IDAgMjkuNi0xMy4zIDI5LjYtMjkuNnYtODguOUM5MjcgNjUxLjkgNjUwLjUgNTcyLjQgNTEyIDU3Mi40eiIgcC1pZD0iMzAyOCIgZGF0YS1zcG0tYW5jaG9yLWlkPSJhMzEzeC5zZWFyY2hfaW5kZXguMC5pMS41MTU0M2E4MUhaQmFQUiIgY2xhc3M9InNlbGVjdGVkIj48L3BhdGg+PC9zdmc+">
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <title>肖彤宇 | AI 应用全栈工程师</title>
+    <title>肖彤宇</title>
 </head>
 <body>
 <div id="app">
     <div style="width: 100%; display: flex;flex-direction: column;align-items: center; text-align: center;">
-        <div style="width: 50%;min-width: 23em;margin: 0 10px;">
-            <h1 style="margin: 30px 0;">肖彤宇 | AI 应用全栈工程师</h1>
+        <div class="resume-content">
+            <h1 class="resume-title">肖彤宇</h1>
+            <div class="resume-subtitle hui">方向：AI应用/全栈开发</div>
             <div style="width: 100%;display: flex;flex-direction: column;align-items: start;">
                 <el-tooltip content="复制" effect="light">
                     <div class="mB3 hand" @click="copyText('17699103371')">
@@ -32,8 +33,8 @@
                 </el-tooltip>
                 <div style="display: flex;justify-content: space-between; width: 100%;">
                     <el-tooltip content="复制" effect="light">
-                        <div class="hand" @click="copyText('1522345857@qq.com')">
-                            <i class="el-icon-s-promotion mR5"></i>1522345857@qq.com
+                        <div class="hand" @click="copyText('work@xiaotongyu.com')">
+                            <i class="el-icon-s-promotion mR5"></i>work@xiaotongyu.com
                         </div>
                     </el-tooltip>
                     <el-tooltip content="前往 Github" effect="light">
@@ -151,6 +152,21 @@
     })
 </script>
 <style>
+    .resume-content {
+        width: 50%;
+        min-width: 23em;
+        margin: 0 10px;
+    }
+
+    .resume-title {
+        margin: 30px 0 6px;
+    }
+
+    .resume-subtitle {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
     .mR5 {
         margin-right: 5px;
     }
@@ -169,6 +185,29 @@
 
     .el-divider--horizontal {
         margin: 15px 0 !important;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            margin: 0;
+        }
+
+        .resume-content {
+            width: 100%;
+            min-width: 0;
+            margin: 0;
+            padding: 0 16px;
+            box-sizing: border-box;
+            overflow-wrap: anywhere;
+        }
+
+        .resume-title {
+            margin: 24px 0 4px;
+        }
+
+        .resume-subtitle {
+            margin-bottom: 20px;
+        }
     }
 </style>
 </html>
