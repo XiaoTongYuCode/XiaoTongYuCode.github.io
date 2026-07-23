@@ -1,167 +1,253 @@
-<!DOCTYPE html>
-<html lang="">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml"
-          href="data:image/svg+xml;base64,PHN2ZyB0PSIxNzMyMDY4MTE3MTU0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMwMjciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cGF0aCBkPSJNNTM1LjYgNTExLjhjOTUuMS0xMC41IDE3Mi4xLTg3LjUgMTgyLjYtMTgyLjZDNzMyIDIwNCA2MzQuNCA5OC4yIDUxMiA5OC4yYy0xMTQuNiAwLTIwNy41IDkyLjgtMjA3LjUgMjA3LjR2MC4xYzAgMTIyLjQgMTA1LjkgMjE5LjkgMjMxLjEgMjA2LjF6TTUxMiA1NzIuNGMtMTM4LjUgMC00MTUgNzkuNC00MTUgMjM3LjF2ODguOWMwIDE2LjQgMTMuMyAyOS42IDI5LjYgMjkuNmg3NzAuN2MxNi40IDAgMjkuNi0xMy4zIDI5LjYtMjkuNnYtODguOUM5MjcgNjUxLjkgNjUwLjUgNTcyLjQgNTEyIDU3Mi40eiIgcC1pZD0iMzAyOCIgZGF0YS1zcG0tYW5jaG9yLWlkPSJhMzEzeC5zZWFyY2hfaW5kZXguMC5pMS41MTU0M2E4MUhaQmFQUiIgY2xhc3M9InNlbGVjdGVkIj48L3BhdGg+PC9zdmc+">
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <title>肖彤宇</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15171b">
+  <meta name="description" content="肖彤宇，AI 应用全栈工程师。专注生产级 Agent、Python/FastAPI、React/Next.js、Electron/Rust 与分布式状态。">
+  <meta property="og:title" content="肖彤宇 | AI 应用全栈工程师">
+  <meta property="og:description" content="把 Agent 做成产品，也把产品做到生产里。">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://xiaotongyu.com/">
+  <meta property="og:image" content="https://xiaotongyu.com/assets/avatar.png">
+  <link rel="canonical" href="https://xiaotongyu.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235b5ef7'/%3E%3Cpath d='M16 18h9l7 10 7-10h9L37 33l12 15h-9l-8-10-8 10h-9l12-15z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <title>肖彤宇 | AI 应用全栈工程师</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "肖彤宇",
+    "url": "https://xiaotongyu.com/",
+    "image": "https://xiaotongyu.com/assets/avatar.png",
+    "jobTitle": "AI 应用全栈工程师",
+    "sameAs": ["https://github.com/XiaoTongYuCode"],
+    "knowsAbout": ["AI Agent", "Python", "FastAPI", "TypeScript", "React", "Next.js", "Electron", "PostgreSQL", "Redis"]
+  }
+  </script>
 </head>
 <body>
-<div id="app">
-    <div style="width: 100%; display: flex;flex-direction: column;align-items: center; text-align: center;">
-        <div style="width: 50%;min-width: 23em;margin: 0 10px;">
-            <h1 style="margin: 30px 0;">肖彤宇 </h1>
-            <div style="width: 100%;display: flex;flex-direction: column;align-items: start;">
-                <el-tooltip content="复制" effect="light">
-                    <div class="mB3 hand" @click="copyText('17699103371')">
-                        <i class="el-icon-phone mR5"></i>17699103371
-                    </div>
-                </el-tooltip>
-                <el-tooltip content="复制" effect="light">
-                    <div class="mB3 hand" style="display: flex;align-items: center;" @click="copyText('x1522345857')">
-                        <svg t="1732087802020" class="icon mR5" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="4215" width="16" height="16">
-                            <path d="M664.250054 368.541681c10.015098 0 19.892049 0.732687 29.67281 1.795902-26.647917-122.810047-159.358451-214.077703-310.826188-214.077703-169.353083 0-308.085774 114.232694-308.085774 259.274068 0 83.708494 46.165436 152.460344 123.281791 205.78483l-30.80868 91.730191 107.688651-53.455469c38.558178 7.53665 69.459978 15.308661 107.924012 15.308661 9.66308 0 19.230993-0.470721 28.752858-1.225921-6.025227-20.36584-9.521864-41.723264-9.521864-63.862493C402.328693 476.632491 517.908058 368.541681 664.250054 368.541681zM498.62897 285.87389c23.200398 0 38.557154 15.120372 38.557154 38.061874 0 22.846334-15.356756 38.156018-38.557154 38.156018-23.107277 0-46.260603-15.309684-46.260603-38.156018C452.368366 300.994262 475.522716 285.87389 498.62897 285.87389zM283.016307 362.090758c-23.107277 0-46.402843-15.309684-46.402843-38.156018 0-22.941502 23.295566-38.061874 46.402843-38.061874 23.081695 0 38.46301 15.120372 38.46301 38.061874C321.479317 346.782098 306.098002 362.090758 283.016307 362.090758zM945.448458 606.151333c0-121.888048-123.258255-221.236753-261.683954-221.236753-146.57838 0-262.015505 99.348706-262.015505 221.236753 0 122.06508 115.437126 221.200938 262.015505 221.200938 30.66644 0 61.617359-7.609305 92.423993-15.262612l84.513836 45.786813-23.178909-76.17082C899.379213 735.776599 945.448458 674.90216 945.448458 606.151333zM598.803483 567.994292c-15.332197 0-30.807656-15.096836-30.807656-30.501688 0-15.190981 15.47546-30.477129 30.807656-30.477129 23.295566 0 38.558178 15.286148 38.558178 30.477129C637.361661 552.897456 622.099049 567.994292 598.803483 567.994292zM768.25071 567.994292c-15.213493 0-30.594809-15.096836-30.594809-30.501688 0-15.190981 15.381315-30.477129 30.594809-30.477129 23.107277 0 38.558178 15.286148 38.558178 30.477129C806.808888 552.897456 791.357987 567.994292 768.25071 567.994292z"
-                                  fill="#5D5D5D" p-id="4216"></path>
-                        </svg>
-                        x1522345857
-                    </div>
-                </el-tooltip>
-                <div style="display: flex;justify-content: space-between; width: 100%;">
-                    <el-tooltip content="复制" effect="light">
-                        <div class="hand" @click="copyText('xiaotongyu@tianyancha.com')">
-                            <i class="el-icon-s-promotion mR5"></i>xiaotongyu@tianyancha.com
-                        </div>
-                    </el-tooltip>
-                    <el-tooltip content="前往 Github" effect="light">
-                        <el-link href="https://github.com/XiaoTongYuCode" target="_blank">
-                            <svg t="1732088778120" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" p-id="5190" width="20" height="20">
-                                <path d="M64 512c0 195.2 124.8 361.6 300.8 422.4 22.4 6.4 19.2-9.6 19.2-22.4v-76.8c-134.4 16-140.8-73.6-150.4-89.6-19.2-32-60.8-38.4-48-54.4 32-16 64 3.2 99.2 57.6 25.6 38.4 76.8 32 105.6 25.6 6.4-22.4 19.2-44.8 35.2-60.8-144-22.4-201.6-108.8-201.6-211.2 0-48 16-96 48-131.2-22.4-60.8 0-115.2 3.2-121.6 57.6-6.4 118.4 41.6 124.8 44.8 32-9.6 70.4-12.8 112-12.8 41.6 0 80 6.4 112 12.8 12.8-9.6 67.2-48 121.6-44.8 3.2 6.4 25.6 57.6 6.4 118.4 32 38.4 48 83.2 48 131.2 0 102.4-57.6 188.8-201.6 214.4 22.4 22.4 38.4 54.4 38.4 92.8v112c0 9.6 0 19.2 16 19.2C832 876.8 960 710.4 960 512c0-246.4-201.6-448-448-448S64 265.6 64 512z"
-                                      fill="#040000" p-id="5191"></path>
-                            </svg>
-                        </el-link>
-                        <a href="https://github.com/XiaoTongYuCode" target="_blank">
-                        </a>
-                    </el-tooltip>
-                </div>
+  <div class="screen-ambient" aria-hidden="true"></div>
 
-            </div>
-            <el-divider></el-divider>
-            <div style="text-align: left;">
-                <h3>奖项</h3>
-                <div class="mB3">第十三届 十四届蓝桥杯大赛天津省二等奖</div>
-                <div class="mB3">第二届全国大学生C语言程序设计大赛一等奖</div>
-                <div class="mB3">多个大创，互联网+大赛项目获得市级、校级评选</div>
-                <div class="mB3">校级优秀学生奖学金</div>
-            </div>
-            <el-divider></el-divider>
-            <div style="text-align: left;">
-                <h3>项目</h3>
-                <h4 style="margin-bottom: 10px;">博客学习交流平台</h4>
-                <div class="hui">技术：spring boot+Mysql+mybatis plus+websocket+Vue2+python</div>
-                <span class="hui">博客学习网站，包含计算机技术博客（内容通过自动化 python 脚本抓去 CSDN ）实现点赞收藏评论功能，个人云盘与公共云盘空间，个人语言与网易云自动抓取音乐，即时聊天私聊</span>
-                <div class="hui">项目链接：
-                    <el-link href="https://xtyopen.top" target="_blank">xtyopen.top</el-link>
-                </div>
+  <header class="site-nav screen-only">
+    <a class="brand" href="#top" aria-label="回到首页">
+      <span class="brand-mark">XT</span>
+      <span class="brand-name">肖彤宇</span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#experience">经历</a>
+      <a href="#projects">项目</a>
+      <a href="#skills">技能</a>
+    </nav>
+    <a class="download-button" href="assets/xiaotongyu-resume.pdf" download>
+      下载 PDF
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
+    </a>
+  </header>
 
-                <h4 style="margin-bottom: 10px;">天眼查数据修复/分析平台（内部）</h4>
-                <div class="hui">技术：python Django、sql、Vue2、飞书sdk、redis、Hive、Kafka等</div>
-                <div class="hui">
-                    背景：各公司纬度数据有200余种、各维度数据上下游及其实例库表各不相同、包含组件redis、sql、Hive、Kafka
-                </div>
-                <span class="hui">实现：完成各维度数据异常数据平台处理、更正；完成各纬度库表量级监控、字段监控、及时发现库表异常、上游采集异常、下游处理异常；完成客诉下游监控、统计客诉类型、处理状况、量级与类型变化，并实现统计数据自定义导出</span>
-                <div class="hui">业绩：逐步完成需求；并全面接入飞书、下游库表、七陌平台，逐步实现数据自动化修复</div>
+  <main id="top" class="resume-document">
+    <article class="resume-page page-one">
+      <div class="page-topline">
+        <p>AI PRODUCT ENGINEER <span>·</span> FULL-STACK</p>
+        <p>BEIJING <span>·</span> 2026</p>
+      </div>
 
-                <h4 style="margin-bottom: 10px;">SOP数据采集与违规播报</h4>
-                <div class="hui">技术：Python、飞书sdk、sql、海豚调度</div>
-                <div class="hui">
-                    项目概述：自动检查全司SOP流程与处理节点（包含：飞书审批、飞书合同、飞书meego），对节点处理时间超过24h视为违规。每日邮件播报T-1违规节点及其处理人、抄送直属上级
-                </div>
-                <div class="hui">业绩：实现实时检查超时SOP节点，并播报处理人及其上级处理</div>
-            </div>
-            <el-divider></el-divider>
-            <div style="text-align: left;">
-                <h3>资格证书</h3>
-                <div class="mB3">程序设计工程师(Java)</div>
-                <div class="mB3">工业互联网平台开发工程师初级</div>
-            </div>
-            <el-divider></el-divider>
-            <div style="text-align: left;">
-                <h3>教育</h3>
-                <h4 style="margin-bottom: 10px;">
-                    <span>天津大学仁爱学院</span><span style="margin-left: 10px;">本科</span><span
-                        style="margin-left: 10px;">软件工程</span>
-                </h4>
-                <div>绩点排名：前8.3%</div>
-                <div class="mB3">
-                    主修课程：Java编程、SSM框架、JavaWeb编程、计算机网络、操作系统、数据结构与算法、MySQL、软件测试基础理论。
-                </div>
-                <div class="mB3">担任职务：校官方新媒体账号运营，校媒体编辑工作室，带领学习vue等技术</div>
-            </div>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> OPEN TO BUILDING HARD THINGS</p>
+          <h1>肖彤宇</h1>
+          <p class="role">AI 应用全栈工程师</p>
+          <h2>把 Agent 做成产品，<br>也把产品做到生产里。</h2>
+          <p class="intro">
+            2 年全栈研发经验，主攻生产级 AI 应用。能够从需求拆解、Agent Runtime、API 与数据层，一路交付到 Web / Electron 客户端、测试、部署与线上稳定性。
+          </p>
+          <div class="contact-row">
+            <a href="tel:+8617699103371">176 9910 3371</a>
+            <a href="mailto:1522345857@qq.com">1522345857@qq.com</a>
+            <a href="https://github.com/XiaoTongYuCode">GitHub</a>
+            <a href="https://xiaotongyu.com">xiaotongyu.com</a>
+          </div>
         </div>
-        <div style="display: flex;justify-content: center;align-items: center; width: 100%;height: 60px; font-size: small;"
-             class="hui">
-            power by
-            <el-link href="https://github.com/XiaoTongYuCode" target="_blank"
-                     style="margin-left: 5px; font-size: small;">XiaoTongYu
-            </el-link>
+
+        <aside class="portrait-card" aria-label="肖彤宇个人照片与技术标签">
+          <div class="portrait-frame">
+            <img src="assets/avatar.png" alt="肖彤宇证件照">
+            <span class="portrait-index">01</span>
+          </div>
+          <div class="portrait-meta">
+            <p>PRIMARY STACK</p>
+            <ul>
+              <li>Python · FastAPI</li>
+              <li>TypeScript · React</li>
+              <li>Agent · RAG · SSE</li>
+              <li>Electron · Rust</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="metric-strip" aria-label="核心成果指标">
+        <div><strong>150</strong><span>已合并 PR</span></div>
+        <div><strong>#2</strong><span>单仓主线贡献</span></div>
+        <div><strong>40%</strong><span>内部 Agent 日覆盖</span></div>
+        <div><strong>100K+</strong><span>AI 解析日调用</span></div>
+      </section>
+
+      <section id="experience" class="editorial-section experience-section">
+        <div class="section-label">
+          <span>01</span>
+          <p>EXPERIENCE</p>
         </div>
-    </div>
-</div>
+        <div class="section-content">
+          <div class="section-heading-row">
+            <div>
+              <h3>北京天眼查科技有限公司</h3>
+              <p>全栈工程师</p>
+            </div>
+            <time>2024.07 - 至今</time>
+          </div>
+          <div class="split-copy">
+            <p>负责企业内部智能体、AI 结构化解析、对话式数据查询导出及数据治理平台，覆盖产品需求、Web、服务端、鉴权、数据与部署。</p>
+            <p>以 Python/FastAPI 与 React/TypeScript 为主，结合 PostgreSQL/MySQL、Redis、Docker、Kubernetes/Rancher，持续推进性能、可靠性与安全边界。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="editorial-section project-section">
+        <div class="section-label">
+          <span>02</span>
+          <p>SELECTED WORK</p>
+        </div>
+        <div class="section-content project-list">
+          <article class="project project-featured">
+            <div class="project-number">01</div>
+            <div class="project-main">
+              <div class="project-title-row">
+                <h3>生产级 AI 商业研究 Agent 平台</h3>
+                <span>核心研发 · 2026.03 - 至今</span>
+              </div>
+              <p>从 0 到 1 交付 FastAPI Agent Server、React/Next.js Web 与 Electron + Rust Desktop，打通会话、企业研究、报告、OAuth 和跨端同步。</p>
+              <p>落地多源检索与引用、SSE 流式传输、PostgreSQL/Redis 持久化、非阻塞 Sub Agent、checkpoint、lease/fencing、幂等收敛与上下文压缩。</p>
+              <div class="tag-row"><span>Agent Runtime</span><span>Distributed State</span><span>Cross-platform</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-number">02</div>
+            <div class="project-main">
+              <div class="project-title-row">
+                <h3>天眼神笔 · 企业内部智能体</h3>
+                <span>全栈研发 · 2025.08 - 至今</span>
+              </div>
+              <p>建设飞书文档组件、Web 与飞书应用，集成文档/代码检索、工具调用、图片生成、多模型供应商与分析闭环，当前日均覆盖约 40% 员工。</p>
+              <div class="tag-row"><span>FastAPI</span><span>React</span><span>RAG</span><span>Tool Calling</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p>肖彤宇 · AI 应用全栈工程师</p>
+        <p>01 / 02</p>
+      </footer>
+    </article>
+
+    <article class="resume-page page-two">
+      <div class="page-topline">
+        <p>SELECTED WORK <span>·</span> SKILLS <span>·</span> EDUCATION</p>
+        <p>XIAOTONGYU.COM</p>
+      </div>
+
+      <section class="page-two-intro">
+        <p class="eyebrow"><span></span> BUILD · SHIP · OPERATE</p>
+        <h2>不止会写功能，<br>更关注系统如何长期运行。</h2>
+        <p>把数据正确性、可恢复性、权限边界、测试与交付纳入日常开发闭环。</p>
+      </section>
+
+      <section class="continuation-projects">
+        <article class="compact-project">
+          <span class="compact-number">03</span>
+          <div>
+            <div class="compact-title"><h3>天眼解析 · AI 结构化解析平台</h3><time>2025.03 - 至今</time></div>
+            <p>建设 Web、服务端与客户端 SDK，支持非结构化内容抽取、Prompt / JSON Schema 自动生成、解析器自动优化及结果管理，平台日均调用达十万级。</p>
+            <small>React · TypeScript · FastAPI · MySQL · Kubernetes</small>
+          </div>
+        </article>
+        <article class="compact-project">
+          <span class="compact-number">04</span>
+          <div>
+            <div class="compact-title"><h3>天眼妹 · 对话式数据查询与导出</h3><time>2025.03 - 至今</time></div>
+            <p>将自然语言问题转换为受控 SQL 与可下载结果，串联 LLM、业务数据源、权限和导出流程，把人工取数链路自动化。</p>
+            <small>Flask · LLM · SQL · Vue · Docker</small>
+          </div>
+        </article>
+        <article class="compact-project">
+          <span class="compact-number">05</span>
+          <div>
+            <div class="compact-title"><h3>企业数据治理与股权链路平台</h3><time>2024.07 - 至今</time></div>
+            <p>覆盖 200+ 企业数据维度的血缘、监控、修复、检索与可视化；核心链路平均约 200 ms，准确率 99.95%+，AI 自动修复覆盖率 90%+。</p>
+            <small>Python · Django · Redis · MySQL · Hive · Kafka</small>
+          </div>
+        </article>
+      </section>
+
+      <section id="skills" class="editorial-section skills-section">
+        <div class="section-label">
+          <span>03</span>
+          <p>CAPABILITIES</p>
+        </div>
+        <div class="section-content capability-grid">
+          <article><h3>AI 应用与 Agent</h3><p>多模型接入、Tool Calling、结构化输出、RAG/语义检索、grounding 与引用溯源、SSE、多/子 Agent、上下文管理、MCP。</p></article>
+          <article><h3>后端与系统设计</h3><p>Python、FastAPI、SQLAlchemy、Pydantic、异步编程、REST/SSE API、BFF、OAuth/OIDC PKCE、任务与并发服务。</p></article>
+          <article><h3>前端与跨端</h3><p>TypeScript、React、Next.js、Vite、Ant Design、React Query、Vue、流式聊天界面、Electron 与 Rust 本地服务。</p></article>
+          <article><h3>数据与交付</h3><p>PostgreSQL/MySQL、Redis、Schema Migration、缓存、幂等与故障恢复；Docker、Kubernetes、GitHub Actions、Terraform、SAE。</p></article>
+        </div>
+      </section>
+
+      <section class="lower-grid">
+        <article class="lower-card">
+          <p class="card-kicker">EDUCATION</p>
+          <h3>天津大学仁爱学院</h3>
+          <p>软件工程 · 本科</p>
+          <time>2021.09 - 2025.06</time>
+          <div class="card-rule"></div>
+          <p class="muted">数据结构、操作系统、计算机网络、数据库、Java 与 Web 开发、软件测试。</p>
+        </article>
+        <article class="lower-card">
+          <p class="card-kicker">AWARDS</p>
+          <ul>
+            <li>第十三届、十四届蓝桥杯天津赛区二等奖</li>
+            <li>第二届全国大学生 C 语言程序设计大赛一等奖</li>
+            <li>多项创新创业及互联网+校级/市级奖项</li>
+          </ul>
+        </article>
+        <article class="lower-card personal-card">
+          <p class="card-kicker">SIDE PROJECTS</p>
+          <p><strong>xiaotongyu.com</strong>：Next.js 16、React 19、TypeScript、Three.js。</p>
+          <p>近期实践：Reachy Mini 的 Qwen 实时多模态扩展、Next.js 全栈宠物社区、Phaser Roguelite 与 Swift 本地 AI 情绪记录。</p>
+        </article>
+      </section>
+
+      <section class="closing-note">
+        <p>Looking for</p>
+        <h2>复杂但真实的 AI 产品问题。</h2>
+        <div>
+          <a href="mailto:1522345857@qq.com">1522345857@qq.com</a>
+          <a href="https://github.com/XiaoTongYuCode">github.com/XiaoTongYuCode</a>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p>肖彤宇 · AI 应用全栈工程师</p>
+        <p>02 / 02</p>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer screen-only">
+    <p>Designed as HTML. Printed as PDF.</p>
+    <p>© 2026 肖彤宇</p>
+  </footer>
 </body>
-<!-- import Vue before Element -->
-<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
-<!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-<script>
-    new Vue({
-        el: '#app',
-        data: function () {
-            return {visible: false}
-        },
-        methods: {
-            copyText(textToCopy) {
-                // 创建一个隐藏的文本输入框
-                const input = document.createElement('input');
-                input.setAttribute('value', textToCopy);
-                document.body.appendChild(input);
-                input.select();
-                document.execCommand('copy');
-                document.body.removeChild(input);
-                this.$message({
-                    message: '已复制',
-                    type: 'success'
-                });
-            },
-        },
-        created() {
-
-        }
-    })
-</script>
-<style>
-    .mR5 {
-        margin-right: 5px;
-    }
-
-    .mB3 {
-        margin-bottom: 3px;
-    }
-
-    .hand {
-        cursor: pointer;
-    }
-
-    .hui {
-        color: #6a6a6a;
-    }
-
-    .el-divider--horizontal {
-        margin: 15px 0 !important;
-    }
-</style>
 </html>
