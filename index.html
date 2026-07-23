@@ -70,26 +70,43 @@
             <el-divider></el-divider>
             <div style="text-align: left;">
                 <h3>项目</h3>
-                <h4 style="margin-bottom: 10px;">天眼神笔 - 企业内部智能体</h4>
-                <div class="hui">技术：Python、FastAPI、React、Redis、MySQL、飞书SDK、LLM、RAG</div>
-                <span class="hui">项目概述：建设飞书文档组件、Web与飞书应用，集成文档/代码检索、工具调用、图片生成、多模型供应商、权限边界与分析闭环，负责前端、服务端、鉴权及交付</span>
-                <div class="hui">业绩：当前日均约40%员工使用，日人均约3次</div>
-
-                <h4 style="margin-bottom: 10px;">天眼解析 - AI结构化解析平台</h4>
-                <div class="hui">技术：React、TypeScript、Vite、Ant Design、Python、FastAPI、MySQL、Kubernetes</div>
-                <div class="hui">
-                    项目概述：建设Web、服务端及客户端SDK，支持非结构化内容抽取、自动Prompt与JSON Schema生成、解析器自动优化及结果管理
-                </div>
-                <span class="hui">实现：完成可配置解析流程、结构化结果校验、客户端接入与容器化部署，持续优化模型效果、性能和稳定性</span>
-                <div class="hui">业绩：平台日均调用达到十万级</div>
-
-                <h4 style="margin-bottom: 10px;">靠谱鸭 - Web / Agent Server / Desktop一体化商业研究Agent</h4>
+                <h4 style="margin-bottom: 10px;">靠谱鸭 · C端商业研究Agent（Web / Desktop）</h4>
+                <div class="hui">时间：2026.06 - 至今｜角色：全栈</div>
                 <div class="hui">技术：Python、FastAPI、PostgreSQL、Redis、SSE、React、Next.js、Electron、Rust、Goose</div>
                 <div class="hui">
-                    项目概述：从0到1参与交付agent_web、agent_server、desktop与desktop_server，建设Web、服务端、桌面端及云端资源服务一体化的商业研究Agent
+                    项目概述：基于私有数据库、网络搜索及天眼查数据，构建面向C端的商业查询与事实核实Agent；采用渐进式检索和证据核验流程，降低对传统单轮RAG的依赖
                 </div>
-                <div class="hui">实现：Web负责内容与Agent承接，FastAPI BFF负责SSE、多源检索、报告及持久化非阻塞Sub Agent，Electron + Rust/Goose提供本地工作区、工具与文件交付，Desktop Server提供OAuth校验、模型/资源代理及安全跨端会话目录</div>
-                <div class="hui">成果：实现OAuth PKCE、Web/Desktop最终历史同步、checkpoint、lease/fencing、上下文压缩、断线恢复、文档导出与应用自动更新；在组织单仓累计150个PR已合并，主线贡献排名第二</div>
+                <div class="hui">实现：参与从0到1建设agent_web、agent_server、desktop与desktop_server，覆盖Web、服务端、桌面端及云端资源服务；落地SSE、多源检索、报告生成、持久化非阻塞Sub Agent、本地工作区与文件交付</div>
+                <div class="hui">成果：实现OAuth PKCE、Web/Desktop最终历史同步、checkpoint、lease/fencing、上下文压缩、断线恢复、文档导出及应用自动更新；在组织单仓累计合并150个PR，主线贡献排名第二</div>
+
+                <h4 style="margin-bottom: 10px;">天眼神笔 · 企业内部智能体</h4>
+                <div class="hui">时间：2025.08 - 2026.02｜角色：全栈</div>
+                <div class="hui">技术：Python、FastAPI、React、Redis、MySQL、飞书SDK、LLM、RAG</div>
+                <div class="hui">项目概述：独立负责飞书文档组件、Web端、飞书应用端、服务端、用户鉴权及行为分析后台；接入飞书文档和企业代码库检索，依据用户权限控制知识、文档与代码的检索范围</div>
+                <div class="hui">实现：建设可扩展工具体系，支持图片生成、飞书文档创建与编辑，以及多模型供应商的配置化接入</div>
+                <div class="hui">成果：平稳上线并持续运营，日均覆盖约40%员工，日人均使用约3次</div>
+
+                <h4 style="margin-bottom: 10px;">天眼解析 · AI结构化解析平台</h4>
+                <div class="hui">时间：2025.05 - 2026.02｜角色：全栈</div>
+                <div class="hui">技术：React 18、TypeScript、Vite、Ant Design、Python、FastAPI、MySQL、JSON Schema、Kubernetes</div>
+                <div class="hui">
+                    项目概述：建设Web、服务端与客户端SDK一体化的AI结构化解析平台，将非结构化内容提取为结构化JSON
+                </div>
+                <div class="hui">实现：支持根据原始样例自动生成任务提示词与JSON Schema，并完成解析器构建、自动优化、调用、管理及结果校验</div>
+                <div class="hui">成果：稳定服务公司内部业务部门、数据团队与爬虫系统，日均调用量达到十万级</div>
+
+                <h4 style="margin-bottom: 10px;">天眼妹 · AI搜索与导出智能体</h4>
+                <div class="hui">时间：2025.03 - 2025.05｜角色：全栈</div>
+                <div class="hui">技术：Python、Flask、LLM、SQL、Vue、Docker</div>
+                <div class="hui">项目概述：建设面向复杂商业数据查询的对话式搜索与导出Agent，支持通过自然语言描述企业范围、时间、注册资本、股权穿透层级及导出字段</div>
+                <div class="hui">成果：自动完成条件解析、数据查询、关系计算与Excel导出，将原本依赖人工处理的特殊化查询转化为自动化流程</div>
+
+                <h4 style="margin-bottom: 10px;">天眼查 · 股东维度数据生产系统</h4>
+                <div class="hui">时间：2025.11 - 2026.01｜角色：数据开发</div>
+                <div class="hui">技术：Python、MySQL、多线程、生产者-消费者模型</div>
+                <div class="hui">项目概述：建设面向大规模企业股权数据的实时处理与结构化存储系统，覆盖工商登记、股东及大股东信息更新，以及上市/非上市公司分类处理</div>
+                <div class="hui">实现：完成多线程消费、内存队列、自动批处理、异常重试、实时监控、日志记录及数据一致性保障</div>
+                <div class="hui">成果：平均处理耗时约200ms，处理准确率超过99.95%（不含上游数据问题）</div>
             </div>
             <el-divider></el-divider>
             <div style="text-align: left;">
