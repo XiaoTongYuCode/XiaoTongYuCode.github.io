@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,15 @@
     <link rel="icon" type="image/svg+xml"
           href="data:image/svg+xml;base64,PHN2ZyB0PSIxNzMyMDY4MTE3MTU0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMwMjciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cGF0aCBkPSJNNTM1LjYgNTExLjhjOTUuMS0xMC41IDE3Mi4xLTg3LjUgMTgyLjYtMTgyLjZDNzMyIDIwNCA2MzQuNCA5OC4yIDUxMiA5OC4yYy0xMTQuNiAwLTIwNy41IDkyLjgtMjA3LjUgMjA3LjR2MC4xYzAgMTIyLjQgMTA1LjkgMjE5LjkgMjMxLjEgMjA2LjF6TTUxMiA1NzIuNGMtMTM4LjUgMC00MTUgNzkuNC00MTUgMjM3LjF2ODguOWMwIDE2LjQgMTMuMyAyOS42IDI5LjYgMjkuNmg3NzAuN2MxNi40IDAgMjkuNi0xMy4zIDI5LjYtMjkuNnYtODguOUM5MjcgNjUxLjkgNjUwLjUgNTcyLjQgNTEyIDU3Mi40eiIgcC1pZD0iMzAyOCIgZGF0YS1zcG0tYW5jaG9yLWlkPSJhMzEzeC5zZWFyY2hfaW5kZXguMC5pMS41MTU0M2E4MUhaQmFQUiIgY2xhc3M9InNlbGVjdGVkIj48L3BhdGg+PC9zdmc+">
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <title>肖彤宇</title>
+    <title>肖彤宇｜AI 应用与全栈研发</title>
+    <meta name="description" content="肖彤宇的个人简历与项目经历，涵盖 NotaWorks、靠谱鸭及企业内部 AI 应用。">
 </head>
 <body>
 <div id="app">
     <div style="width: 100%; display: flex;flex-direction: column;align-items: center; text-align: center;">
         <div class="resume-content">
             <h1 class="resume-title">肖彤宇</h1>
-            <div class="resume-subtitle hui">方向：AI应用/全栈开发</div>
+            <div class="resume-subtitle hui">AI 应用 · Agent 工程 · 全栈研发</div>
             <div style="width: 100%;display: flex;flex-direction: column;align-items: start;">
                 <el-tooltip content="复制" effect="light">
                     <div class="mB3 hand" @click="copyText('17699103371')">
@@ -54,10 +55,9 @@
             <el-divider></el-divider>
             <div style="text-align: left;">
                 <h3>个人优势</h3>
-                <div class="mB3">软件工程本科，约2年全栈研发经验，主攻AI应用与Agent工程。以Python/FastAPI、TypeScript/React/Next.js为主力技术栈，能够独立完成需求拆解、架构设计、前后端实现、数据建模、鉴权、测试、部署及线上问题闭环。</div>
-                <div class="mB3">具备生产级Agent系统研发经验，实际交付过Tool Calling、多源检索与RAG、结构化输出与引用溯源、SSE流式交互、持久化非阻塞Sub Agent、上下文压缩、断线与故障恢复等核心能力。</div>
-                <div class="mB3">具备Web、服务端与桌面端一体化交付能力，覆盖FastAPI BFF、React/Next.js前端、Electron + Rust本地运行时、OAuth登录、跨端会话同步、文件与文档服务以及应用自动更新。</div>
-                <div class="mB3">关注系统可靠性与工程质量，具备PostgreSQL/Redis状态设计、并发控制、幂等、租约与fencing、缓存与性能优化、Schema Migration、自动化测试、CI/CD、可观测及灰度回滚实践。已参与企业内部智能体、AI结构化解析、对话式数据查询导出及数据治理平台等生产项目；内部Agent日均覆盖约40%员工，AI解析平台日均调用十万级。</div>
+                <div class="mB3">软件工程本科，约 2 年全栈研发经验，专注 AI 应用与 Agent 工程。参与研发 NotaWorks 和靠谱鸭，覆盖个人 AI 工作区、团队 CRM 与商业研究场景。</div>
+                <div class="mB3">交付过工具调用、多源检索与引用溯源、SSE 流式交互和结构化输出。参与 MCP 接入、子 Agent 持久化、上下文压缩与会话恢复。</div>
+                <div class="mB3">主要使用 TypeScript、React、Next.js 和 Python、FastAPI，具备 Web、服务端与 Electron + Rust 桌面端的交付经验。使用 PostgreSQL、Redis 处理并发和状态恢复，覆盖鉴权、自动化测试、CI/CD 与线上排障。</div>
             </div>
             <el-divider></el-divider>
             <div style="text-align: left;">
@@ -69,7 +69,19 @@
             </div>
             <el-divider></el-divider>
             <div style="text-align: left;">
-                <h3>项目</h3>
+                <h3>项目经历</h3>
+                <section aria-labelledby="notaworks">
+                    <h4 id="notaworks" style="margin-bottom: 10px;">NotaWorks · 个人 AI 工作区与团队 CRM</h4>
+                    <div class="hui">2026.09 至今｜全栈研发｜TypeScript、React、Next.js、Node.js、PostgreSQL、Redis</div>
+                    <div class="hui">个人版支持收录网页、整理资料与推进项目。团队版围绕客户档案开展企业调研、跟进和招标监测。Nota AI 可在授权范围内读取资料、更新档案和创建任务。</div>
+                    <div class="hui">参与档案、任务和审批功能开发，完善 Agent 工具调用、流式消息渲染及 MCP 会话恢复。实现 DSH 桌面插件的工作台、会话卡片和 Agent 通知，并完善官网交互演示。</div>
+                    <div class="hui">筹备开源自托管版，已验证独立登录和手动建档。接入 DeepSeek 模型与网页搜索，支持切换模型供应商，正在验证 Docker Compose 部署。</div>
+                    <div class="project-links">
+                        <a href="https://notaworks.com/">个人版官网</a>
+                        <a href="https://notaworks.com/team">团队版演示</a>
+                    </div>
+                </section>
+
                 <h4 style="margin-bottom: 10px;">靠谱鸭 · C端商业研究Agent（Web / Desktop）</h4>
                 <div class="hui">时间：2026.06 - 至今｜角色：全栈</div>
                 <div class="hui">技术：Python、FastAPI、PostgreSQL、Redis、SSE、React、Next.js、Electron、Rust、Goose</div>
@@ -198,6 +210,18 @@
 
     .hui {
         color: #6a6a6a;
+    }
+
+    .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 16px;
+        margin-top: 6px;
+    }
+
+    .project-links a {
+        color: #23599b;
+        text-underline-offset: 3px;
     }
 
     .el-divider--horizontal {
